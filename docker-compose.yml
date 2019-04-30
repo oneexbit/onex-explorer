@@ -12,6 +12,8 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: onexpwdtobd
       MONGODB_USER: onexuser
       MONGODB_PASS: onexpwdtobd
+    volumes:
+      - ./data/db:/data/db
 
   mongo-express:
     image: mongo-express
